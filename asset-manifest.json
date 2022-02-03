@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Resume-Maker/static/css/main.e6c13ad2.css",
+    "main.js": "/Resume-Maker/static/js/main.35180557.js",
+    "static/js/787.77155abf.chunk.js": "/Resume-Maker/static/js/787.77155abf.chunk.js",
+    "static/media/logo.png": "/Resume-Maker/static/media/logo.d311c27a13fda9aa6f9c.png",
+    "index.html": "/Resume-Maker/index.html",
+    "main.e6c13ad2.css.map": "/Resume-Maker/static/css/main.e6c13ad2.css.map",
+    "main.35180557.js.map": "/Resume-Maker/static/js/main.35180557.js.map",
+    "787.77155abf.chunk.js.map": "/Resume-Maker/static/js/787.77155abf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.35180557.js"
+  ]
+}
