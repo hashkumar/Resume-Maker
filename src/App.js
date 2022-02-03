@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Resume from './components/Resume';
 import Resumeage from './components/Resumepage';
-// import WorkingResume from './components/WorkingResume';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
        <Navbar />
        <Resume />  
        <Resumeage />
-       {/* <WorkingResume /> */}
+       <Footer />
       </>
   )
 }

@@ -4,17 +4,20 @@ import { AppBar, Typography, Container } from "@mui/material";
 const Navbar = () => {
   const styles = {
     appbar: {
+    backgroundColor: "#4B0082",
     minWidth: "100%",
     minHeight:"64px",
     marginBottom: "5%",
     display: "flex",
-    justifyContent: "center"   
+    justifyContent: "center",
+    color: "white",
+    padding: "0.5% 0px",
     }
   }
   return(
     <>
-    <AppBar color="secondary" position="static" style={styles.appbar} >
-    <Typography variant="h5" p={2} >Resume Maker</Typography> 
+    <AppBar position="static" style={styles.appbar} >
+    <Typography variant="h6" p={2} >Design Resume</Typography> 
     </AppBar>
     </>
   )

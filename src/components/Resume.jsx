@@ -848,9 +848,11 @@ function Notes() {
                 return (
                     <>
                         <hr></hr>
-                        <Typography variant="h4" textAlign="center" >Your Resume</Typography>
+                        <Stack justifyContent="space-between" direction="row" maxWidth="90%" style={{margin: "auto", padding: "1% 0px"}} >
+                        <Typography variant="h5" textAlign="center" ><b>Your Resume</b></Typography>
+                        <Button onClick={GeneratePdf} color="secondary" style={{backgroundColor: "#800080", color: "white"}} >Download</Button>
                         <Button onClick={(id) => onDelete(index)} style={{ backgroundColor: "#CA0B00", color: "white" }} >By Mistake</Button>
-                        <Button onClick={GeneratePdf} color="secondary" >Download</Button>
+                        </Stack>
                         <hr></hr>
                         <div id="content"> 
                         <Paper  key={index} id={index} style={styles.paper} >
@@ -1009,9 +1011,9 @@ function Notes() {
                             </Stack>
                             <hr></hr>
                             <br></br>
-                            <Stack>
-                                <Typography><b>Scholastic Achievements</b></Typography>
-                                <hr></hr>
+                            <Typography><b>Scholastic Achievements</b></Typography>
+                            <hr></hr>
+                          
                                 <ul>
                                     <Stack direction="row" justifyContent="space-between" >
                                         <li>{value.Achievement1}</li>
@@ -1027,13 +1029,13 @@ function Notes() {
                                     </Stack>
                                 </ul>
 
-                                <Stack>
-                                    <br></br>
-                                    <Typography>
-                                       <b> Academic Projects</b>
-                                    </Typography>
-                                    <br></br>
+                                <br></br>
+                              
 
+                                <Stack>
+                                <Typography><b> Academic Projects</b></Typography>
+                                <hr></hr>
+                                <br></br>
                                     <Stack direction="row" justifyContent="space-between" >
                                         <Typography>
                                             {value.ProjectTitle1}
@@ -1082,10 +1084,10 @@ function Notes() {
                                 </Stack>
                                 <br></br>
                                 <br></br>
-                                <Stack>
-                                    <Typography><b>Technical</b></Typography>
+                                <Typography><b>Technical</b></Typography>
                                     <hr></hr>
                                     <br></br>
+                                <Stack>
                                     <Stack direction="row" justifyContent="space-between"  >
                                         <Typography>{value.ProjectTitle3}</Typography>
                                         <Typography>{value.ProjectTitleDuration3}</Typography>
@@ -1096,10 +1098,11 @@ function Notes() {
                                     </ul>
                                 </Stack>
 
-                                <Stack>
-                                    <br></br>
+                                <br></br>
                                     <Typography><b>Platforms Worked</b></Typography>
                                     <hr></hr>
+                                <Stack>
+                                   
                                     <ul>
                                         <Stack direction="row" justifyContent="space-between" >
                                             <li>Operating Systems  &nbsp; &nbsp;:</li>
@@ -1120,12 +1123,11 @@ function Notes() {
                                     </ul>
                                 </Stack>
 
-                                <Stack>
-                                    <br></br>
+                                <br></br>
                                     <Typography><b>Positions of Responsibility</b></Typography>
                                     <hr></hr>
-                                
-                                    <Stack direction="row" justifyContent="space-between" >
+                                <Stack>   
+                                 <Stack direction="row" justifyContent="space-between" >
                                         <Typography>{value.Position1}</Typography>
                                         <Typography>{value.PositionDuration1}</Typography>
                                     </Stack>
@@ -1141,11 +1143,10 @@ function Notes() {
                                     </ul>
                                 </Stack>
 
-                                <Stack>
-                                    <br></br>
+                                <br></br>
                                     <Typography><b>Extracurricular Activities</b></Typography>
                                     <hr></hr>
-                                    
+                                <Stack> 
                                     <Stack direction="row" justifyContent="space-between" >
                                         <Typography>{value.Event1}</Typography>
                                         <Typography>{value.EventDuration1}</Typography>
@@ -1161,7 +1162,7 @@ function Notes() {
                                         <li>{value.EventDescription2}</li>
                                     </ul>
                                 </Stack>
-                            </Stack>
+                         
                         </Paper>
                         </div>
                     </>

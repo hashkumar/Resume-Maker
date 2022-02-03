@@ -61,7 +61,7 @@ const Resumepage = () => {
         </Stack>    
         <br></br>
         <hr></hr>
-         
+
         <br></br>
         <hr></hr>
         <Stack direction="row" justifyContent="space-between" >
@@ -118,29 +118,33 @@ const Resumepage = () => {
         </Stack>
         <hr></hr>
         <br></br>
-        <Stack>
-        <Typography>Scholastic Achievements</Typography>
+
+        <Typography><b>Scholastic Achievements</b></Typography>
         <hr></hr>
         <ul>
          <Stack direction="row" justifyContent="space-between" >
          <li>Description of Achievement</li>
-         <li>Duration</li>
+         <Typography>Duration</Typography>
          </Stack>
          <Stack direction="row" justifyContent="space-between" >
          <li>Description of Achievement</li>
-         <li>Duration</li>
+         <Typography>Duration</Typography>
          </Stack>
          <Stack direction="row" justifyContent="space-between" >
          <li>Description of Achievement</li>
-         <li>Duration</li>
+         <Typography>Duration</Typography>
          </Stack>
          </ul>
         
-        <Stack>
-        <Typography>
-        Academic Projects
-        </Typography>
         <br></br>
+        <Typography>
+        <b>Academic Projects</b>
+        </Typography>
+        <hr></hr>
+        <br></br>
+
+        <Stack>
+   
 
         <Stack  direction="row" justifyContent="space-between" >
         <Typography>
@@ -188,10 +192,12 @@ const Resumepage = () => {
         </ul>
      
         </Stack>
-
-        <Stack>
-            <Typography>Technical </Typography>
+        <br></br>
+        <br></br>
+        <Typography><b>Technical</b> </Typography>
             <hr></hr>
+        <Stack>
+           
             <br></br>
             <Stack direction="row" justifyContent="space-between"  >
             <Typography>Project Title 1</Typography>
@@ -203,9 +209,11 @@ const Resumepage = () => {
         </ul>
         </Stack>
 
-        <Stack>
-            <Typography>Platforms Worked</Typography>
+        <br></br>
+        <Typography><b>Platforms Worked</b></Typography>
             <hr></hr>
+        <Stack>
+     
             <br></br>
             <ul>
             <Stack direction="row" justifyContent="space-between" >
@@ -226,11 +234,13 @@ const Resumepage = () => {
             </Stack>
         </ul>
         </Stack>
-        
-        <Stack>
-            <Typography>Positions of Responsibility</Typography>
+        <br></br>
+        <br></br>
+        <Typography><b>Positions of Responsibility</b></Typography>
             <hr></hr>
             <br></br>
+        <Stack>
+         
             <Stack direction="row" justifyContent="space-between" >
             <Typography>Position</Typography>
             <Typography>Duration</Typography>
@@ -247,10 +257,10 @@ const Resumepage = () => {
             </ul>
         </Stack>
 
-        <Stack>
-            <Typography>Extracurricular Activities</Typography>
+        <Typography><b>Extracurricular Activities</b></Typography>
             <hr></hr>
             <br></br>
+        <Stack>
             <Stack direction="row" justifyContent="space-between" >
             <Typography>Event</Typography>
             <Typography>Duration</Typography>
@@ -269,7 +279,7 @@ const Resumepage = () => {
 
 
 
-         </Stack>
+    
         
          
         </Paper>
