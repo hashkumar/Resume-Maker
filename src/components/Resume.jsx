@@ -4,6 +4,7 @@ import Modal from '@mui/material/Modal';
 import { useMediaQuery } from '@mui/material';
 import image from './images/logo.png'
 import { Divider } from '@mui/material';
+import jsPDF from 'jspdf';
 
 
 
@@ -27,9 +28,10 @@ const style = {
 function Notes() {
 
     const media = useMediaQuery('(max-width: 600px)');
+
     const styles = {
         imagecss: {
-            maxWidth: "100px"
+            maxWidth: media ? "50px" : "100px"
         },
         paper: {
             padding: "5%",
@@ -227,6 +229,17 @@ function Notes() {
                 return index !== id;
             })
         )
+    }
+
+    const GeneratePdf = () => { 
+    var doc = new jsPDF("p", "pt", "a1");
+    doc.html(document.querySelector("#content"),{
+        callback: function(pdf){
+            //  var pageCount = doc.internal.getNumberofPages();
+            //  pdf.deletePage(pageCount);
+            pdf.save("resume.pdf");
+        }
+    })
     }
 
 
@@ -837,9 +850,10 @@ function Notes() {
                         <hr></hr>
                         <Typography variant="h4" textAlign="center" >Your Resume</Typography>
                         <Button onClick={(id) => onDelete(index)} style={{ backgroundColor: "#CA0B00", color: "white" }} >By Mistake</Button>
+                        <Button onClick={GeneratePdf} color="secondary" >Download</Button>
                         <hr></hr>
-
-                        <Paper key={index} id={index} style={styles.paper} >
+                        <div id="content"> 
+                        <Paper  key={index} id={index} style={styles.paper} >
                             <Stack direction="row" justifyContent="space-between" >
                                 <Stack>
                                     <img style={styles.imagecss} src={image} />
@@ -1149,6 +1163,7 @@ function Notes() {
                                 </Stack>
                             </Stack>
                         </Paper>
+                        </div>
                     </>
                 )
             }
