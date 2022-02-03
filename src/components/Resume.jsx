@@ -63,7 +63,7 @@ function Notes() {
     const handleClose = () => {
         setOpen(false);
         setItem((prev) => {
-            return [...prev, values]
+            return [values, ...prev]
         })
         setValues({
             Name: "",
