@@ -902,7 +902,7 @@ function Notes() {
 
                             <br></br>
                             <hr></hr>
-                            <Stack direction="row" justifyContent="space-between" >
+                            <Stack style={{display: "grid", gridTemplateColumns: "repeat(5, 1fr)"}} >
                                 <Typography>
                                     Degree / Certificate
                                 </Typography>
@@ -920,7 +920,7 @@ function Notes() {
                                 </Typography>
                             </Stack>
                             <hr></hr>
-                            <Stack direction="row" justifyContent="space-between" >
+                            <Stack  style={{display: "grid", gridTemplateColumns: "repeat(5, 1fr)"}} >
                                 <Typography>
                                     Post Graduation
                                 </Typography>
@@ -938,7 +938,7 @@ function Notes() {
                                 </Typography>
                             </Stack>
                             <hr></hr>
-                            <Stack direction="row" justifyContent="space-between" >
+                            <Stack style={{display: "grid", gridTemplateColumns: "repeat(5, 1fr)"}} >
                                 <Typography>
                                     Graduation
                                 </Typography>
@@ -956,7 +956,7 @@ function Notes() {
                                 </Typography>
                             </Stack>
                             <hr></hr>
-                            <Stack direction="row" justifyContent="space-between" >
+                            <Stack style={{display: "grid", gridTemplateColumns: "repeat(5, 1fr)"}}  >
                                 <Typography>
                                     12th
                                 </Typography>
@@ -974,7 +974,7 @@ function Notes() {
                                 </Typography>
                             </Stack>
                             <hr></hr>
-                            <Stack direction="row" justifyContent="space-between" >
+                            <Stack style={{display: "grid", gridTemplateColumns: "repeat(5, 1fr)"}}  >
                                 <Typography>
                                     Diploma Studies
                                 </Typography>
@@ -992,7 +992,7 @@ function Notes() {
                                 </Typography>
                             </Stack>
                             <hr></hr>
-                            <Stack direction="row" justifyContent="space-between" >
+                            <Stack style={{display: "grid", gridTemplateColumns: "repeat(5, 1fr)"}} >
                                 <Typography>
                                     10th
                                 </Typography>

@@ -12,8 +12,8 @@ const App = () => {
        <Navbar />
        <Resume />  
        <Resumeage />
-       <Footer />
-      </>
+       <Footer /> 
+        </>
   )
 }
 
